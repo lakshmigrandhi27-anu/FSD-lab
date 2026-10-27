@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Input and Output</title>
+
+    <!-- Internal JavaScript -->
+    <script>
+        function internalJS() {
+            alert("This is Internal JavaScript!");
+        }
+    </script>
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>JavaScript Input, Output and Type Conversion</h1>
+
+    <h2>1. Internal JavaScript</h2>
+    <button onclick="internalJS()">Internal JS</button>
+
+    <h2>2. External JavaScript</h2>
+    <button onclick="externalJS()">External JS</button>
+
+    <h2>3. Input and Output Methods</h2>
+    <button onclick="inputOutput()">Input / Output</button>
+
+    <h2>4. Name, Age and Voter Eligibility</h2>
+
+    <label>Enter Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <br><br>
+
+    <label>Enter Age:</label>
+    <input type="number" id="age" placeholder="Enter your age">
+
+    <br><br>
+
+    <button onclick="checkEligibility()">Submit</button>
+
+    <p id="message"></p>
+
+    <table border="1" cellpadding="10" id="resultTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Voter Eligibility</th>
+        </tr>
+    </table>
+
+</body>
+</html>
